@@ -9,7 +9,25 @@
 #import "Student.h"
 #import <UIKit/UIKit.h>
 
+@interface Person : NSObject
+
+@end
+
+@implementation Person
+
+
+@end
+
+
 @implementation Student
+
+
++(instancetype)studentWithNo:(NSInteger) no
+{
+    Student *stu = [[[Student alloc] init] autorelease];
+    stu.schoolNo = no;
+    return stu;
+}
 
 - (void)dealloc
 {

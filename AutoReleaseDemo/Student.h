@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Student : NSObject
 
+//学号
+@property (nonatomic, assign) NSInteger schoolNo;
+
++(instancetype)studentWithNo:(NSInteger) no;
+
 @end
 
 NS_ASSUME_NONNULL_END

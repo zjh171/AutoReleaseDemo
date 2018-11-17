@@ -19,20 +19,15 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
     // Do any additional setup after loading the view.
-//    Student *student = [[[Student alloc] init] autorelease];
-//    
-//    NSArray *ary = [NSArray arrayWithObjects:student,nil];
+    Student *student = [[Student alloc] init];
+    Student *student2 = [Student studentWithNo:100];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *btn2 = [[UIButton alloc] init];
+    
+    NSArray *ary = [NSArray arrayWithObjects:student,nil];
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (void)dealloc
 {
@@ -40,5 +35,6 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"AViewController Dealloc" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alert show];
 }
+
 
 @end
